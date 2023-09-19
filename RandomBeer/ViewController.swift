@@ -6,14 +6,25 @@
 //
 
 import UIKit
+import SnapKit
+import Alamofire
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        view.backgroundColor = .white
+        
+        Network.shared.callRequest(type: MyBeer.self, api: .single(id: 300)) { response in
+            switch response {
+            case .success(let success):
+                dump(success)
+            case .failure(let failure):
+                print(failure.errorDescription)
+            }
+        }
+        
     }
-
-
 }
 
