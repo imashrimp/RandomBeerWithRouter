@@ -11,12 +11,13 @@ typealias MyBeer = [Beer]
 
 struct Beer: Codable {
     let id: Int
-    let name, description: String
-    let foodPairing: [String]
+    let name: String
+    let description: String
+    let imageURL: String?
     
     enum CodingKeys: String, CodingKey {
         case id, name
+        case imageURL = "image_url"
         case description
-        case foodPairing = "food_pairing"
     }
 }

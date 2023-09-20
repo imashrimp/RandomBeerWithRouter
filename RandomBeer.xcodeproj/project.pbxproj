@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17715D182ABACB850078B5F9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17715D172ABACB850078B5F9 /* Router.swift */; };
+		17715D1C2ABACFCB0078B5F9 /* BeerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17715D1B2ABACFCB0078B5F9 /* BeerViewModel.swift */; };
+		17715D1F2ABAD4D60078B5F9 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17715D1E2ABAD4D60078B5F9 /* Observable.swift */; };
+		17715D222ABAD9BE0078B5F9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 17715D212ABAD9BE0078B5F9 /* Kingfisher */; };
 		1788897F2AB9BA8E0099B2A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1788897E2AB9BA8E0099B2A0 /* AppDelegate.swift */; };
 		178889812AB9BA8E0099B2A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178889802AB9BA8E0099B2A0 /* SceneDelegate.swift */; };
 		178889832AB9BA8E0099B2A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178889822AB9BA8E0099B2A0 /* ViewController.swift */; };
@@ -22,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17715D172ABACB850078B5F9 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		17715D1B2ABACFCB0078B5F9 /* BeerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewModel.swift; sourceTree = "<group>"; };
+		17715D1E2ABAD4D60078B5F9 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		1788897B2AB9BA8E0099B2A0 /* RandomBeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomBeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1788897E2AB9BA8E0099B2A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		178889802AB9BA8E0099B2A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17715D222ABAD9BE0078B5F9 /* Kingfisher in Frameworks */,
 				178889942AB9BAD90099B2A0 /* Alamofire in Frameworks */,
 				178889972AB9BB450099B2A0 /* SnapKit in Frameworks */,
 			);
@@ -49,6 +57,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17715D192ABACFB40078B5F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				178889822AB9BA8E0099B2A0 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17715D1A2ABACFBB0078B5F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				17715D1B2ABACFCB0078B5F9 /* BeerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		17715D1D2ABAD4C80078B5F9 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				17715D1E2ABAD4D60078B5F9 /* Observable.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		178889722AB9BA8E0099B2A0 = {
 			isa = PBXGroup;
 			children = (
@@ -68,9 +100,11 @@
 		1788897D2AB9BA8E0099B2A0 /* RandomBeer */ = {
 			isa = PBXGroup;
 			children = (
+				17715D1D2ABAD4C80078B5F9 /* Utility */,
+				17715D1A2ABACFBB0078B5F9 /* ViewModel */,
 				1788897E2AB9BA8E0099B2A0 /* AppDelegate.swift */,
 				178889802AB9BA8E0099B2A0 /* SceneDelegate.swift */,
-				178889822AB9BA8E0099B2A0 /* ViewController.swift */,
+				17715D192ABACFB40078B5F9 /* View */,
 				178889842AB9BA8E0099B2A0 /* Main.storyboard */,
 				178889872AB9BA8E0099B2A0 /* Assets.xcassets */,
 				178889892AB9BA8E0099B2A0 /* LaunchScreen.storyboard */,
@@ -87,6 +121,7 @@
 				1788899B2AB9C2190099B2A0 /* Network.swift */,
 				1788899D2AB9C4D00099B2A0 /* BeerError.swift */,
 				1788899F2AB9C5C40099B2A0 /* Model.swift */,
+				17715D172ABACB850078B5F9 /* Router.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -110,6 +145,7 @@
 			packageProductDependencies = (
 				178889932AB9BAD90099B2A0 /* Alamofire */,
 				178889962AB9BB450099B2A0 /* SnapKit */,
+				17715D212ABAD9BE0078B5F9 /* Kingfisher */,
 			);
 			productName = RandomBeer;
 			productReference = 1788897B2AB9BA8E0099B2A0 /* RandomBeer.app */;
@@ -142,6 +178,7 @@
 			packageReferences = (
 				178889922AB9BAD90099B2A0 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				178889952AB9BB450099B2A0 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				17715D202ABAD9BE0078B5F9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 1788897C2AB9BA8E0099B2A0 /* Products */;
 			projectDirPath = "";
@@ -170,10 +207,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17715D1C2ABACFCB0078B5F9 /* BeerViewModel.swift in Sources */,
+				17715D182ABACB850078B5F9 /* Router.swift in Sources */,
 				178889A02AB9C5C40099B2A0 /* Model.swift in Sources */,
 				1788899E2AB9C4D00099B2A0 /* BeerError.swift in Sources */,
 				1788899C2AB9C2190099B2A0 /* Network.swift in Sources */,
 				178889992AB9BC7B0099B2A0 /* BeerAPI.swift in Sources */,
+				17715D1F2ABAD4D60078B5F9 /* Observable.swift in Sources */,
 				178889832AB9BA8E0099B2A0 /* ViewController.swift in Sources */,
 				1788897F2AB9BA8E0099B2A0 /* AppDelegate.swift in Sources */,
 				178889812AB9BA8E0099B2A0 /* SceneDelegate.swift in Sources */,
@@ -394,6 +434,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		17715D202ABAD9BE0078B5F9 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		178889922AB9BAD90099B2A0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -413,6 +461,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		17715D212ABAD9BE0078B5F9 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17715D202ABAD9BE0078B5F9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		178889932AB9BAD90099B2A0 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 178889922AB9BAD90099B2A0 /* XCRemoteSwiftPackageReference "Alamofire" */;
